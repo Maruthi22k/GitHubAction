@@ -7,8 +7,8 @@ jobs:
   Hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Hellow world
+      - name: Hellow Master
         run: echo "Hello World!"
 
-      - name: Build and push
+      - name: Build pipeline
         run: echo "Building and pushing when push is made to main branch"
