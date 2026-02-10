@@ -1,0 +1,14 @@
+name: start workflow
+on:
+  push: 
+    branches:
+      - main
+jobs:
+  Hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hellow world
+        run: echo "Hello World!"
+
+      - name: Build and push
+        run: echo "Building and pushing when push is made to main branch"
