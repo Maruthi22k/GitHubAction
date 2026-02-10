@@ -1,0 +1,18 @@
+name: Jusat build all files
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - feature/*
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        usees: actions/checkout@v2
+
+      - name: Build pipeline
+        run: echo "Build sucessfully executed"
